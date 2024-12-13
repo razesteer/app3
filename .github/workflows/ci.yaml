@@ -37,7 +37,7 @@ jobs:
         with:
           context: .
           push: true
-          tags: ghcr.io/razesteer/app2:${{ env.TAG }}
+          tags: ghcr.io/razesteer/app3:${{ env.TAG }}
 
       # - name: Checkout Helm Chart Repository
       #   uses: actions/checkout@v3
