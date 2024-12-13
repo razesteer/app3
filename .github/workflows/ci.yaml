@@ -58,6 +58,8 @@ jobs:
           git config user.email "${{ github.actor }}@users.noreply.github.com"
           git add values/dev/app3.yaml
           git commit -m "app2 image tag to ${{ env.TAG }}"
+          git status
+          ls -la
           git push origin main
         env:
           GITHUB_TOKEN: ${{ secrets.WORKFLOW_TOKEN }}
