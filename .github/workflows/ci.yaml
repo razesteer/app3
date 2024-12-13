@@ -48,7 +48,6 @@ jobs:
 
       - name: Update Image Tag in Values File
         run: |
-         
           yq -i '.image.tag = "${{ env.TAG }}"' values/dev/app3.yaml
 
       - name: Commit and Push Changes
