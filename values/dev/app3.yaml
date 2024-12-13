@@ -1,0 +1,13 @@
+replicaCount: 1
+app:
+  name: app3 # Change this to the name of your application
+image:
+  repository: ghcr.io/razesteer/app3
+  tag: 541a0b5
+service:
+  port: 5000 # Change this to your desired service port
+  type: LoadBalancer # This makes the service accessible through a Load Balancer
+ingress:
+  enabled: true # Set to false to disable Ingress
+  host: example.com # Specify the host for the Ingress
+  path: / # Specify the path for the Ingress
