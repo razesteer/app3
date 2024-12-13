@@ -3,7 +3,7 @@ app:
   name: app3 # Change this to the name of your application
 image:
   repository: ghcr.io/razesteer/app3
-  tag: 541a0b5
+  tag: fa9615a
 service:
   port: 5000 # Change this to your desired service port
   type: LoadBalancer # This makes the service accessible through a Load Balancer
